@@ -1,0 +1,41 @@
+include <iostream> #include <string>
+
+using namespace std;
+
+class student
+
+{
+
+private:
+
+int rollNumber; string name; string course;
+
+public:
+
+student(int rollNumber, string name, string course)
+
+this->rollNumber = rollNumber;
+
+this->name = name;
+
+this->course = course;
+
+void displayDetails()
+
+cout << "--- Student Profile ---" << endl;
+
+cout << "Roll Number: " << this->rollNumber << endl;
+
+cout << "Name: " <<,this->name << endl;
+
+cout <<"Course:" << this->course << endl;
+
+};
+
+int main()
+{
+student student1(101, "deb", "AIDS");
+
+student1.displayDetails();
+
+return 0;
